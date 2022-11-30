@@ -1,0 +1,30 @@
+extern FILE *source;
+extern int lookahead;
+extern int linecount;
+extern char lexeme[];
+
+extern void declarative (void);
+extern void imperative (void);
+extern void vardecl (void);
+extern void sbpdecl (void);
+extern void varlist (void);
+extern void vartype (void);
+extern void proceddecl (void);
+extern void funcdecl (void);
+extern void parmlist (void);
+extern void stmtlist (void);
+extern void stmt (void);
+extern void ifstmt (void);
+extern void whilestmt (void);
+extern void repstmt (void);
+extern void expr (void);
+extern int relop (void);
+extern int unary (void);
+extern int oplus (void);
+extern void term (void);
+extern void fact (void);
+extern int otimes (void);
+extern void IdList(void);
+
+extern void match(int);
+extern int gettoken(FILE *);
